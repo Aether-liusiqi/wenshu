@@ -1,6 +1,6 @@
 # 贡献指南
 
-感谢你对 Official Document Writer 的关注！无论是修正格式错误、补充范文、还是优化 Prompt，这份指南将帮助你快速上手。
+感谢你对 文书（Wenshu）的关注！无论是修正格式错误、补充范文、还是优化 Prompt，这份指南将帮助你快速上手。
 
 ## 环境搭建
 
@@ -12,8 +12,8 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/Aether-liusiqi/official-document-writer.git
-cd official-document-writer
+git clone https://github.com/Aether-liusiqi/wenshu.git
+cd wenshu
 ```
 
 ## 可以贡献什么

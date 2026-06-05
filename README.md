@@ -1,4 +1,4 @@
-# Official Document Writer（公文笔杆子）
+# 文书（Wenshu）— 公文笔杆子
 
 **专业中文公文写作 AI Skill** — 覆盖《党政机关公文处理工作条例》（2012）全部 15 种法定公文，严格遵循 GB/T 9704-2012 格式标准，兼容 Claude Code / Codex CLI / OpenClaw / OpenCode 四大 AI Agent 平台。
 
@@ -20,7 +20,7 @@
 ## 架构
 
 ```
-official-document-writer/
+wenshu/
 │
 ├── SKILL.md                          # 核心 — 角色定义 + 6步工作流 + 15文种速查表
 │
@@ -63,19 +63,19 @@ official-document-writer/
 
 ```bash
 # 克隆到 Claude Code skills 目录
-git clone https://github.com/Aether-liusiqi/official-document-writer.git \
-  ~/.claude/skills/official-document-writer/
+git clone https://github.com/Aether-liusiqi/wenshu.git \
+  ~/.claude/skills/wenshu/
 
 # 或在 Claude Code 中通过 plugin 安装（如果已发布到 marketplace）
-# /plugin install official-document-writer@claude-plugins-official
+# /plugin install wenshu@claude-plugins-official
 ```
 
 ### Codex CLI
 
 ```bash
 # 克隆到 Codex skills 目录
-git clone https://github.com/Aether-liusiqi/official-document-writer.git \
-  ~/.agents/skills/official-document-writer/
+git clone https://github.com/Aether-liusiqi/wenshu.git \
+  ~/.agents/skills/wenshu/
 
 # 确保 skills 功能已启用
 # 编辑 ~/.codex/config.toml，添加:
@@ -87,24 +87,24 @@ git clone https://github.com/Aether-liusiqi/official-document-writer.git \
 
 ```bash
 # 克隆到 OpenClaw skills 目录
-git clone https://github.com/Aether-liusiqi/official-document-writer.git \
-  ~/.openclaw/skills/official-document-writer/
+git clone https://github.com/Aether-liusiqi/wenshu.git \
+  ~/.openclaw/skills/wenshu/
 
 # 或放入 workspace skills 目录
-git clone https://github.com/Aether-liusiqi/official-document-writer.git \
-  <workspace>/skills/official-document-writer/
+git clone https://github.com/Aether-liusiqi/wenshu.git \
+  <workspace>/skills/wenshu/
 ```
 
 ### OpenCode
 
 ```bash
 # 克隆到 OpenCode skills 目录（项目级）
-git clone https://github.com/Aether-liusiqi/official-document-writer.git \
-  .opencode/skills/official-document-writer/
+git clone https://github.com/Aether-liusiqi/wenshu.git \
+  .opencode/skills/wenshu/
 
 # 或全局安装
-git clone https://github.com/Aether-liusiqi/official-document-writer.git \
-  ~/.config/opencode/skills/official-document-writer/
+git clone https://github.com/Aether-liusiqi/wenshu.git \
+  ~/.config/opencode/skills/wenshu/
 ```
 
 ---

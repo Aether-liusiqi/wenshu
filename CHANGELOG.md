@@ -1,6 +1,6 @@
 # Changelog
 
-本文件记录 Official Document Writer 的所有重要变更。
+本文件记录 文书（Wenshu）的所有重要变更。
 
 格式基于 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)，
 本项目遵循 [语义化版本](https://semver.org/spec/v2.0.0.html)。
@@ -40,4 +40,4 @@
 
 ---
 
-[1.0.0]: https://github.com/Aether-liusiqi/official-document-writer/releases/tag/v1.0.0
+[1.0.0]: https://github.com/Aether-liusiqi/wenshu/releases/tag/v1.0.0
