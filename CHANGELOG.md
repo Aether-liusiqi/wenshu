@@ -7,6 +7,25 @@
 
 ---
 
+## [1.1.1] — 2026-06-06
+
+### Changed
+- **SKILL.md 瘦身**：13KB → ~5KB。详细内容按职责拆分为 `prompts/core/` 三个可拼装模块（workflow/guardrails/output-spec），SKILL.md 保留角色定义、底线约束、流程概述和模块指针
+- **renderers/ 合并到 scripts/**：删除 renderers/ 薄封装层，Word 导出和结构校验直接调用 scripts/
+- **第四步正文撰写约束精确化**：新增 `references/08-language-taboos.md`，定义六类语言禁忌（主观评价词/模糊时间词/绝对化用语/措辞力度错配/事实与研判混淆/自查流程）。workflow.md 的 Step 4 同步更新
+
+### Added
+- **`prompts/core/workflow.md`**：6 步完整工作流（含决策树、场景识别路线、语言禁忌引用）
+- **`prompts/core/guardrails.md`**：硬性约束 + 语言准则 + 六类语言禁忌三大类红线
+- **`prompts/core/output-spec.md`**：格式标准 + 数字规范 + 名称引用 + 22 文种速查表 + 混淆辨析
+- **范文写作要点注释**：通知/报告/请示/函/纪要/公告/命令 7 篇范文新增详细写作要点注释段（为什么这样写、哪些地方容易出错、措辞的语境考量）
+
+### Fixed
+- **公告范文**信息密度提升：从 1.6KB 扩至含完整写作要点注释
+- **命令范文**信息密度提升：从 1.9KB 扩至含完整写作要点注释
+
+---
+
 ## [1.1.0] — 2026-06-05
 
 ### Added
@@ -58,5 +77,6 @@
 
 ---
 
+[1.1.1]: https://github.com/Aether-liusiqi/wenshu/releases/tag/v1.1.1
 [1.1.0]: https://github.com/Aether-liusiqi/wenshu/releases/tag/v1.1.0
 [1.0.0]: https://github.com/Aether-liusiqi/wenshu/releases/tag/v1.0.0

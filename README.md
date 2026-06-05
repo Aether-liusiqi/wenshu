@@ -34,7 +34,8 @@ wenshu/
 │   ├── 04-common-errors.md           #   三类常见错误 + 自查清单
 │   ├── 05-writing-methodology.md     #   立意·结构·标题·语言写作法
 │   ├── 06-history.md                 #   三千年公文简史
-│   └── 07-formal-materials.md        #   7 种事务文书详解
+│   ├── 07-formal-materials.md        #   7 种事务文书详解
+│   └── 08-language-taboos.md         #   公文语言禁忌清单
 │
 ├── examples/                         # 22 篇标准范文
 │   ├── 通知/报告/请示/函/纪要/       #   15 法定公文
@@ -44,13 +45,15 @@ wenshu/
 │       ├── 工作总结/工作方案/讲话稿/
 │       ├── 汇报材料/简报/情况专报/回复函/
 │
-├── scripts/                          # 核心实现
+├── scripts/                          # Python 工具
 │   ├── generate_docx.py              #   Word (.docx) 导出引擎
 │   └── check_sections.py             #   公文结构校验引擎
 │
-├── renderers/                        # 语义化入口
-│   ├── docx.py                       #   Markdown → Word 导出
-│   └── validate.py                   #   结构校验
+├── prompts/                          # Prompt 模块（可拼装）
+│   └── core/                         #   核心模块
+│       ├── workflow.md               #   6 步写作工作流
+│       ├── guardrails.md             #   硬性约束 + 语言准则 + 禁忌
+│       └── output-spec.md            #   格式标准 + 文种速查表
 │
 ├── README.md                         # 本文件
 ├── CHANGELOG.md                      # 版本记录
@@ -139,14 +142,14 @@ Skill 会自动识别场景、选择文种、按规范撰写或检查。
 pip install python-docx
 
 # 导出为 Word（自动套用 A4/仿宋/小标宋体/页码/版记）
-python renderers/docx.py draft.md -o output.docx --doc-type 通知
+python scripts/generate_docx.py draft.md -o output.docx --doc-type 通知
 ```
 
 ### 公文结构校验
 
 ```bash
 # 无外部依赖，Python 3.11+ 标准库即可
-python renderers/validate.py 通知 draft.md
+python scripts/check_sections.py 通知 draft.md
 ```
 
 ---
