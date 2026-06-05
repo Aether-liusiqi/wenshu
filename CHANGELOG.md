@@ -7,6 +7,24 @@
 
 ---
 
+## [1.1.0] — 2026-06-05
+
+### Added
+- **要素分层体系** — 引入五层分类法（必备/常见/条件项/地方或系统样式/项目自定义），替换 v1.0 的平铺式规则罗列。AI 生成公文时按文种和场景按需组合要素，避免"无脑堆砌"所有可能元素。应用于 `references/02-format-standards.md` 全部版头/主体/版记要素
+- **7 种事务文书** — 新增 `references/07-formal-materials.md`，覆盖：工作总结、工作方案/实施方案、讲话稿/发言稿、汇报材料、简报/信息简报/新闻简报、情况专报/信息专报/舆情专报、回复函（事务）。每种文种含核心结构、要素分层速查和写作要点
+- **事务文书范文（7 篇）** — `examples/事务文书/`：工作总结（年度总结）、工作方案（营商环境方案）、讲话稿（部署讲话）、汇报材料（项目进展）、简报（工作简报）、情况专报（市场供应）、回复函（征求意见回复）
+- **Word (.docx) 导出** — `scripts/generate_docx.py` + `renderers/docx.py`：将 Markdown 公文导出为标准 Word 文件。支持双套字体方案（standard/compact）、双套版式方案、A4 页面、仿宋/小标宋/黑体/楷体自动套用、页码/版记/首行缩进/落款格式。依赖 python-docx
+- **公文结构自动校验** — `scripts/check_sections.py` + `renderers/validate.py`：按文种自动校验必备章节、标题层级、禁止用语、标准结尾语、发文字号格式、"请示报告"等杂交名称。支持 15 法定公文 + 7 事务文书。纯标准库，零外部依赖
+- SKILL.md 能力范围扩展至 9 项，新增工具使用说明
+- README 架构图更新至 v1.1，新增 Word 导出与结构校验使用说明
+
+### Changed
+- `references/02-format-standards.md` 全部要素表格增加"层级"列
+- SKILL.md description 增加事务文书和导出/校验功能
+- 范文总数从 15 篇增至 22 篇
+
+---
+
 ## [1.0.0] — 2026-06-05
 
 ### 首次发布
@@ -40,4 +58,5 @@
 
 ---
 
+[1.1.0]: https://github.com/Aether-liusiqi/wenshu/releases/tag/v1.1.0
 [1.0.0]: https://github.com/Aether-liusiqi/wenshu/releases/tag/v1.0.0
